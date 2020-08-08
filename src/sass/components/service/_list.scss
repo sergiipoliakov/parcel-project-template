@@ -4,11 +4,8 @@
     @media screen and(max-width: $tablet-max) {
         margin-bottom: 20px;
     }
-    
-   
+
     @media screen and(min-width: $desktop) {
-        
-    
     width: 100%;
     padding: 30px 40px;
     background: linear-gradient(180deg, #171A24 0%,
@@ -45,17 +42,18 @@
 
 .price__from {
     display: inline-flex;
-
+    align-items: center;
+    flex-grow: 1;
+   
     &::before {
         content: " ";
-        margin-top: 20px;
+        flex-grow: 1;
+        
+        margin-top: 12px;
+        margin-left: 6px;
+        margin-right: 6px;
         padding: 0;
-        // width: 80px;
         height: 1px;
         background: rgba(157, 164, 189, 0.12);
-        @media screen and (min-width: $mobile-max) {
-            min-width: 45px; 
-            max-width: 340px;
-            }
     }
 }
