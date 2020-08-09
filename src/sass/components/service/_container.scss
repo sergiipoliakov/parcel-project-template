@@ -82,10 +82,15 @@
     border-radius: 25px;
     color: $primary-white;
     cursor: pointer;
+    transition: $timing-animation;
 
     @media screen and(min-width: $desktop){
-        margin-bottom: 130px;
-        
+        margin-bottom: 130px;    
+    }
+
+    &:hover, &:focus {
+            transform: scale(1.1);
+            background-color: #ff6c00;
     }
 }
 
