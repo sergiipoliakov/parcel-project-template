@@ -1,23 +1,19 @@
 .contacts-form-section {
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid $accent-color;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet-min) {
+    width: $tablet-min;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
+    width: $desktop;
   }
-  // TO DO: вставити картинки з проекту
-  // background-image: url('../images/price-and-service/price-overley.svg'),
-  //   url('../images/price-and-service/price-bg.jpg');
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
-
-  // @media screen and (min-width: $tablet-min) {
-  //   background-image: url('../images/price-and-service/overley-tablet.svg'),
-  //     url('../images/price-and-service/price-bg.jpg');
-  // }
-
-  // @media screen and (min-width: $desktop) {
-  //   background-image: url('../images/price-and-service/overley-desc.svg'),
-  //     url('../images/price-and-service/price-bg.jpg');
-  // }
 }
 
 .form-сontainer {
@@ -25,28 +21,58 @@
   display: block;
   padding-top: 84px;
   padding-bottom: 84px;
-  @extend %container;
-  //   padding: 0 31px 0 31px;
 
-  //   @media screen and (min-width: $tablet-min) {
-  //     padding: 0 39px 0 39px;
-  //   }
-
+  @media screen and (min-width: $mobile) {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+  @media screen and (min-width: $tablet-min) {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
   @media screen and (min-width: $desktop) {
-    // padding: 0 55px 0 55px;
+    padding-left: 55px;
+    padding-right: 55px;
     width: 50%;
   }
 }
 
 .contacts-time-сontainer {
+  display: block;
+  @media screen and (min-width: $mobile) {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+  @media screen and (min-width: $tablet-min) {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
   @media screen and (min-width: $desktop) {
-    // padding: 0 55px 0 55px;
+    padding-left: 55px;
+    padding-right: 55px;
     width: 50%;
+  }
+
+  // TO DO: вставити картинки з проекту
+  background-image: url('../images/price-and-service/price-overley.svg'),
+    url('../images/price-and-service/price-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media screen and (min-width: $tablet-min) {
+    background-image: url('../images/price-and-service/overley-tablet.svg'),
+      url('../images/price-and-service/price-bg.jpg');
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/price-and-service/overley-desc.svg'),
+      url('../images/price-and-service/price-bg.jpg');
   }
 }
 
 .contacts-сontainer {
-  @extend %container;
+  // @extend %container;
   padding-top: 84px;
   padding-bottom: 44px;
 }
@@ -64,6 +90,10 @@
   letter-spacing: 0.05em;
 
   color: $primary-white;
+
+  @media screen and (min-width: $tablet-min) {
+    text-align: start;
+  }
 }
 
 .form-field:not(:last-child) {
@@ -111,11 +141,14 @@
 //   color: transparent;
 // }
 
-.buttton-box {
+.button-box {
   display: flex;
   justify-content: center;
   margin-top: 44px;
   margin-left: auto;
+  @media screen and (min-width: $tablet-min) {
+    justify-content: flex-start;
+  }
 }
 
 .address-item {
@@ -160,7 +193,7 @@
 
 .working-time-сontainer {
   padding-bottom: 84px;
-  @extend %container;
+  // @extend %container;
 }
 
 .working-time-title {
